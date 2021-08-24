@@ -1,0 +1,291 @@
+.animated-shape {
+  z-index: 2;
+  fill: rgb(139, 158, 193);
+  width: 35px;
+}
+
+.animated-shape path, line {
+  transition: 200ms;
+  stroke: rgba(255, 255, 255, 0);
+  stroke-dasharray: 1700;
+  opacity: 10;
+  animation: animate 1.5s cubic-bezier(0,0.23,1,0.1);
+}
+
+
+
+@keyframes animate {
+
+  0% {
+    stroke: rgba(255, 255, 255, 0);
+    opacity: 0;
+    fill: none;
+  }
+
+  30% {
+    opacity: 10;
+    fill: none;
+  }
+
+  95% {
+    fill: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    fill: rgba(193, 139, 139, 1);
+    opacity: 10;
+  }
+
+}
+
+.animated-logo {
+  z-index: 1;
+  fill: rgb(47, 76, 115);
+}
+
+.animated-logo path {
+  transition: 200ms;
+  stroke: rgba(47, 76, 115, 1);
+  stroke-dasharray: 1535;
+  opacity: 10;
+  animation: animate-logo 4s;
+}
+
+@keyframes animate-logo {
+
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1535;
+  }
+
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1535;
+  }
+
+  95% {
+    fill: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    fill: rgb(47, 76, 115);
+    opacity: 10;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#shape-1 {
+  transform: rotate(102deg);
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+.shape-1-main {
+  animation: spin-1 20s infinite linear;
+}
+
+@keyframes spin-1 {
+
+  from {
+    transform: rotate(102deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 102deg));
+  }
+
+}
+
+#shape-2 {
+  transform: rotate(47deg);
+  position: absolute;
+  left: 80%;
+  top: 10%;
+}
+
+.shape-2-main {
+  animation: spin-2 20s infinite linear;
+}
+
+@keyframes spin-2 {
+
+  from {
+    transform: rotate(47deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 47deg));
+  }
+
+}
+
+#shape-3 {
+  transform: rotate(40deg);
+  position: absolute;
+  left: 90%;
+  top: 70%;
+}
+
+.shape-3-main {
+  animation: spin-3 20s infinite linear;
+}
+
+@keyframes spin-3 {
+
+  from {
+    transform: rotate(40deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 40deg));
+  }
+
+}
+
+#shape-4 {
+  transform: rotate(100deg);
+  position: absolute;
+  left: 35%;
+  top: 90%;
+}
+
+@media screen and (max-height: 675px) {
+  #shape-4 {
+    top: 80%;
+  }
+}
+
+.shape-4-main {
+  animation: spin-4 20s infinite linear;
+}
+
+@keyframes spin-4 {
+
+  from {
+    transform: rotate(100deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 100deg));
+  }
+
+}
+
+#shape-5 {
+  transform: rotate(220deg);
+  position: absolute;
+  left: 10%;
+  top: 70%;
+}
+
+.shape-5-main {
+  animation: spin-5 20s infinite linear;
+}
+
+@keyframes spin-5 {
+
+  from {
+    transform: rotate(220deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 220deg));
+  }
+
+}
+
+#shape-6 {
+  transform: rotate(320deg);
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+
+.shape-6-main {
+  animation: spin-6 20s infinite linear;
+}
+
+@keyframes spin-6 {
+
+  from {
+    transform: rotate(320deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 320deg));
+  }
+
+}
+
+#shape-7 {
+  transform: rotate(142deg);
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+.shape-7-main {
+  animation: spin-7 20s infinite linear;
+}
+
+@keyframes spin-7 {
+
+  from {
+    transform: rotate(142deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 142deg));
+  }
+
+}
+
+#shape-8 {
+  transform: rotate(78deg);
+  position: absolute;
+  left: 75%;
+  top: 40%;
+}
+
+.shape-8-main {
+  animation: spin-8 20s infinite linear;
+}
+
+@keyframes spin-8 {
+
+  from {
+    transform: rotate(78deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 78deg));
+  }
+
+}
+
+#shape-9 {
+  transform: rotate(24deg);
+  position: absolute;
+  left: 60%;
+  top: 10%;
+}
+
+.shape-9-main {
+  animation: spin-9 20s infinite linear;
+}
+
+@keyframes spin-9 {
+
+  from {
+    transform: rotate(24deg);
+  }
+
+  to {
+    transform: rotate(calc(360deg + 24deg));
+  }
+
+}
